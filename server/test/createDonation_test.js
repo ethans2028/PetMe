@@ -10,7 +10,7 @@ describe('Creating Donation in MongoDB', () => {
         newDonation.save() // returns a promise after some time 
             .then(() => { 
                 //if the newDonation is saved in db and it is not new 
-                //assert(!newDonation.isNew); 
+                assert(!newDonation.isNew); 
                 done(); 
             }); 
     }); 
